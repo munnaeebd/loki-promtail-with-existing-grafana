@@ -7,3 +7,5 @@ helm upgrade --install promtail loki/promtail --namespace=monitoring --set "loki
 
 
 From grafana--> add loki datasource --> url--> http://loki:3100
+
+go to explore and search for the log
