@@ -2,6 +2,8 @@
 
 ## To monitor kubernetes cluster:
 ~~~
+helm repo add loki https://grafana.github.io/loki/charts
+helm repo update
 helm upgrade --install loki --namespace=monitoring loki/loki
 
 helm upgrade --install promtail loki/promtail --namespace=monitoring --set "loki.serviceName=loki"
